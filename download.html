@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap Structure and JS Plugins</title>
+
+  <!-- Bootstrap CSS (Exercise 2.1) -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+
+  <style>
+    body { padding: 2rem; background-color: #f8f9fa; }
+    .section { margin-bottom: 3rem; }
+    .icon-demo i { font-size: 2rem; margin-right: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4">Bootstrap </h1>
+
+    <!-- Exercise 2.1: CSS Folder -->
+    <div class="section">
+      <h3>📁 CSS Folder</h3>
+      <p>Contains Bootstrap's styles for layout, buttons, typography, etc.</p>
+      <button class="btn btn-primary">Styled Button</button>
+    </div>
+
+    <!-- Exercise 2.1: JS Folder -->
+    <div class="section">
+      <h3>📁 JS Folder</h3>
+      <p>Includes <code>bootstrap.bundle.min.js</code> which powers modals, dropdowns.</p>
+      <!-- Modal Trigger -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Open Modal
+      </button>
+
+      <!-- Modal Component -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Bootstrap Modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This modal works using Bootstrap’s JavaScript plugin from <code>bootstrap.bundle.min.js</code>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 2.1: Icons Folder -->
+    <div class="section icon-demo">
+      <h3>📁 Icons Folder</h3>
+      <p>Contains SVG icons used with <code>bootstrap-icons.css</code>.</p>
+      <i class="bi bi-heart-fill text-danger"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-alarm text-primary"></i>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Exercise 2.2) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
